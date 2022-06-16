@@ -1,0 +1,8 @@
+---
+
+- name: Remove /usr/local/bin/helm
+  file:
+    path: "{{ helm_bin_directory }}/helm"
+    state: absent
+  tags:
+    - uninstall

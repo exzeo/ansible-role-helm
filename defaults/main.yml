@@ -1,0 +1,17 @@
+---
+
+# Version of 'helm' to install, defaults to latest version
+helm_version: ""
+
+# Toggling this will uninstall from the server
+uninstall: false
+
+# Where to install "helm" binary
+helm_bin_directory: "/usr/local/bin"
+
+# Define a list of global packages to be installed with NPM.
+helm_repos: []
+#  # Install a specific version of a package.
+#  - name: bitnami-charts
+#    url: https://charts.bitnami.com/bitnami
+#    flags: "--username chart-user --password Password123"

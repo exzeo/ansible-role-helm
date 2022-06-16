@@ -1,0 +1,16 @@
+---
+
+- name: Verify
+  hosts: all
+
+  tasks:
+  
+    - name: Check version
+      command: "helm version"
+      ignore_errors: yes
+      register: current_version
+
+    - name: Ensure is uninstalled
+      assert:
+        that:
+          - current_version.rc != 0
