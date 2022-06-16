@@ -1,0 +1,8 @@
+---
+
+helm_arch: amd64
+helm_download_url: "https://get.helm.sh/helm-v{{ helm_version }}-{{ ansible_system | lower }}-{{ helm_arch }}.tar.gz"
+helm_tmp_directory: "/tmp"
+
+dependencies_packages:
+  - unzip

@@ -1,0 +1,7 @@
+---
+- name: Upgrade
+  hosts: all
+  roles:
+    - role: "{{ lookup('env', 'MOLECULE_PROJECT_DIRECTORY') | basename }}"
+      vars:
+        helm_version: "{{ lookup('env', 'HELM_VERSION') }}"
