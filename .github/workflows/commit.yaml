@@ -4,7 +4,6 @@ name: Ansible Commit
 # Uncomment to use
 on: 
   pull_request: 
-    types: [opened, reopened, edited]
 
 jobs:
   lint:
